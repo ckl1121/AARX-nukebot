@@ -57,3 +57,7 @@ async def nuke(ctx):
     print("✅ nuke 完了！")
 
 bot.run(TOKEN)
+import time
+
+while True:
+    time.sleep(10)
