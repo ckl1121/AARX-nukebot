@@ -11,10 +11,10 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 
 宣伝文 = (
     "@everyone @here\n"
-    "# 荒らし人民連合万歳\n"
-    "https://discord.gg/A6jfawVAXV\n"
-    "https://cdn.discordapp.com/attachments/1366799790825934901/1372779394153709639/54_20250516123447.png?ex=682803f0&is=6826b270&hm=d5b46dbf146b9c79efedbc342e6430c03fd0809c6bd423581e6f8e5229f0688f&\n"
-    "https://imgur.com/NbBGFcf"
+    "# AARX ON TOP\n"
+    "# [参加](https://discord.gg/FDfqhyS38J)\n"
+    "# [画像](https://imgur.com/NbBGFcf)\n"
+    "# [画像](https://imgur.com/pY7EpwN)"
 )
 
 @bot.event
